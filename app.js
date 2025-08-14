@@ -43,7 +43,7 @@ function sortearAmigo(){
     //ver si sirve el boton de sortear amigo
     //alert("Estas a punto de saber quien es tu amigo secreto...");
     if (amigos < 2 ){
-        alert("Aun no has añadido suficientes participantes");
+        alert("Aún no has añadido suficientes participantes");
         return;
         //validar que por lo menos haya dos amigos disponibles para sortear
     }  
@@ -57,4 +57,10 @@ function sortearAmigo(){
     //muestra el amigo sorteado en el html
     document.getElementById('resultado').innerHTML = "Tu amigo secreto es: " + amigoSorteado ;
 
+
+    // Eliminar al amigo sorteado del array
+    /*amigos.splice(indiceAmigo, 1);
+    if (amigos == ""){
+        alert("Ya sorteaste todos los amigos disponibles, recarga la página para inciar un nuevo sorteo")
+    }*/
 }
